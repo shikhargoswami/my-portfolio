@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.doNotShowInfoMsg": true,
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "emmet.includeLanguages": { "html": "html" }
+}

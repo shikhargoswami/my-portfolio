@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <title>Blog Post Title — [Your Name]</title>
+  <style>
+    .prose { max-width: 65ch; margin-inline: auto; }
+    .prose h2 { font-size:var(--text-xl); margin-block: var(--space-10) var(--space-4); }
+    .prose h3 { font-size:var(--text-lg); margin-block: var(--space-8) var(--space-3); }
+    .prose p  { font-size:var(--text-base); line-height:1.8; margin-bottom:var(--space-5); color:var(--color-text); }
+    .prose ul { padding-left:var(--space-6); margin-bottom:var(--space-5); }
+    .prose li { font-size:var(--text-base); line-height:1.8; margin-bottom:var(--space-2); color:var(--color-text-muted); }
+    .prose code { background:var(--color-surface-offset); padding:2px 6px; border-radius:var(--radius-sm); font-size:0.9em; }
+    .prose pre  { background:var(--color-surface-offset); padding:var(--space-6); border-radius:var(--radius-lg); overflow-x:auto; margin-bottom:var(--space-6); }
+    .prose blockquote { border-left:3px solid var(--color-primary); padding-left:var(--space-6); margin-left:0; color:var(--color-text-muted); font-style:italic; }
+    .post-hero { padding-block:var(--space-16) var(--space-10); border-bottom:1px solid var(--color-divider); margin-bottom:var(--space-10); }
+    .post-meta { display:flex; gap:var(--space-4); align-items:center; font-size:var(--text-xs); color:var(--color-text-muted); margin-bottom:var(--space-6); }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="./index.html" class="nav-logo" style="font-size:var(--text-sm);color:var(--color-text-muted);text-decoration:none">← All Posts</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="container">
+      <header class="post-hero prose">
+        <div class="post-meta">
+          <span>April 25, 2026</span>
+          <span>·</span>
+          <span>5 min read</span>
+          <span>·</span>
+          <span class="tag">Analytics</span>
+        </div>
+        <h1 style="font-size:var(--text-2xl);font-weight:700;line-height:1.1;margin-bottom:var(--space-4)">
+          How I Built an Operations Dashboard That Cut Reporting Time by 60%
+        </h1>
+        <p style="font-size:var(--text-lg);color:var(--color-text-muted)">
+          A deep-dive into the metrics design, SQL architecture, and PowerBI layout that made it work.
+        </p>
+      </header>
+      <article class="section prose">
+        <p>Replace this content with your actual blog post. Write in plain HTML — use <code>&lt;h2&gt;</code> for sections, <code>&lt;p&gt;</code> for paragraphs, <code>&lt;ul&gt;</code> for lists.</p>
+        <h2>The Problem</h2>
+        <p>Our team was spending 3 hours every Monday manually pulling warranty and RMA data from three different systems, formatting it in Excel, and emailing a PDF. The data was always a week stale.</p>
+        <h2>The Solution</h2>
+        <p>I built a unified SQL view that joined the three source tables, scheduled a Python script to refresh it nightly, and connected PowerBI directly to the view.</p>
+        <pre><code>SELECT
+  w.ticket_id,
+  w.created_date,
+  r.status AS rma_status,
+  c.region
+FROM warranty_tickets w
+LEFT JOIN rma_records r ON w.ticket_id = r.ticket_id
+LEFT JOIN customers c ON w.customer_id = c.id
+WHERE w.created_date >= DATEADD(day, -90, GETDATE())</code></pre>
+        <blockquote>The result: Monday reporting went from 3 hours to 10 minutes, with live data.</blockquote>
+      </article>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 [Your Name]</p>
+      <nav class="footer-links">
+        <a href="../index.html#contact">Contact</a>
+        <a href="./index.html">More Posts</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
