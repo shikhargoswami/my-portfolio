@@ -1,1471 +1,706 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" class="no-js">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Shikhar Goswami · Product Manager</title>
     <meta
       name="description"
-      content="Shikhar Goswami — Product Manager. Nearly 3 years taking initiatives from discovery to launch at SanDisk and Western Digital, plus three self-directed 0→1 products."
+      content="Product Manager who takes products through the whole loop: find the pain, size it, spec it, sequence it, ship it, measure it. $2.5M programme across 40+ markets at SanDisk, plus three products built from zero."
     />
-    <meta property="og:title" content="Shikhar Goswami — Product Manager · 0→1 Products" />
+    <link rel="canonical" href="https://shikhargoswami.github.io/my-portfolio/" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shikhargoswami.github.io/my-portfolio/" />
+    <meta property="og:title" content="Shikhar Goswami · Product Manager" />
     <meta
       property="og:description"
-      content="Find the pain point, size it, spec it, sequence it, ship it, measure it."
+      content="From user problem to shipped product. $2.5M programme across 40+ markets, plus three products built from zero."
     />
-    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
 
     <link
-      href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2301696f'/%3E%3Ctext x='32' y='42' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3ESG%3C/text%3E%3C/svg%3E"
     />
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      defer
-    ></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Shikhar Goswami — Product Manager</title>
-  </head>
-  <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-      <nav class="nav">
-        <a href="#" class="nav-logo" aria-label="Home — Shikhar Goswami">
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <rect
-              width="36"
-              height="36"
-              rx="10"
-              fill="var(--color-primary)"
-              opacity="0.12"
-            />
-            <path
-              d="M22 12.5C22 11.1 20.9 10 19.5 10H15C13.3 10 12 11.3 12 13C12 14.7 13.3 16 15 16H21C22.7 16 24 17.3 24 19C24 20.7 22.7 22 21 22H15.5C14.1 22 13 20.9 13 19.5"
-              stroke="var(--color-primary)"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
-          </svg>
-        </a>
-        <ul class="nav-links" role="list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#offer">What I Offer</a></li>
-          <li><a href="#impact">Impact</a></li>
+    <script>
+      // Runs before paint: enables JS-only styles and applies a saved theme with no flash.
+      (function () {
+        var d = document.documentElement;
+        d.classList.remove("no-js");
+        d.classList.add("js");
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light" || t === "dark") d.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <script src="./assets/js/site.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shikhar Goswami",
+        "jobTitle": "Product Manager",
+        "url": "https://shikhargoswami.github.io/my-portfolio/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+        "alumniOf": "Indian Institute of Information Technology and Management, Gwalior",
+        "sameAs": [
+          "https://linkedin.com/in/shikhargoswami",
+          "https://github.com/shikhargoswami",
+          "https://medium.com/@shikhargoswami"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ── Global nav ─────────────────────────────────────────── -->
+    <header class="gnav" id="gnav">
+      <nav class="gnav-inner" aria-label="Primary">
+        <a class="gnav-brand" href="#top" aria-label="Shikhar Goswami, back to top">Shikhar Goswami</a>
+
+        <ul class="gnav-links" id="gnav-links">
+          <li><a href="#work">Work</a></li>
           <li><a href="#products">Products</a></li>
-          <li><a href="#resume">Journey</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#beyond">Beyond Work</a></li>
-          <li><a href="#contact">Let's Talk</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
-        <div class="nav-actions">
+
+        <div class="gnav-actions">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+            <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+            <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" /><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" /></svg>
+          </button>
+          <a class="pill pill--sm" href="#contact">Let’s talk</a>
           <button
-            class="theme-toggle"
-            data-theme-toggle
-            aria-label="Switch to dark mode"
-          ></button>
-          <button
-            class="nav-hamburger"
-            aria-label="Toggle menu"
+            class="icon-btn gnav-menu"
+            type="button"
+            aria-label="Open menu"
             aria-expanded="false"
+            aria-controls="gnav-links"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
+            <span class="burger" aria-hidden="true"><span></span><span></span></span>
           </button>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <!-- ══ HERO ═══════════════════════════════════════════════════ -->
-      <section class="hero" id="home">
-        <div class="container hero-inner">
-          <span class="hero-tag">Discovery · Delivery · 0→1</span>
-          <h1 class="hero-heading">
-            From user problem<br />to <em>shipped solution.</em>
+      <!-- ── Hero ─────────────────────────────────────────────── -->
+      <section class="hero" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <p class="hero-eyebrow reveal">
+            <span class="live-dot" aria-hidden="true"></span>
+            Product Manager · Available now
+          </p>
+          <h1 class="hero-title reveal">
+            From user problem<br />
+            <span class="grad">to shipped product.</span>
           </h1>
-          <p class="hero-sub">
-            I'm Shikhar, a Product Manager. I spent nearly 3 years at SanDisk and
-            Western Digital taking initiatives from discovery to launch across
-            40+ markets, and since then I've built three of my own products
-            from zero. I do the whole loop: find the pain point, size it, spec
-            it, sequence it, ship it, measure it.
+          <p class="hero-lede reveal">
+            I take products through the whole loop: find the pain, size it, spec
+            it, sequence it, ship it, measure it. At SanDisk that meant a $2.5M
+            programme across 40+ markets. On my own, it’s three products built
+            from zero.
           </p>
-          <div class="hero-actions">
-            <a href="#products" class="btn btn-primary">See What I've Built</a>
-            <a href="#contact" class="btn btn-ghost">Get in Touch →</a>
+          <div class="hero-ctas reveal">
+            <a class="pill" href="#work">See my work</a>
+            <a class="link-cta" href="#contact">Get in touch<span class="chev" aria-hidden="true">›</span></a>
           </div>
-        </div>
-        <div class="hero-scroll" aria-hidden="true">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path d="M12 5v14M5 12l7 7 7-7" />
-          </svg>
-          scroll
-        </div>
-      </section>
 
-      <!-- ══ ABOUT ══════════════════════════════════════════════════ -->
-      <section class="about section" id="about">
-        <div class="container about-grid">
-          <div class="about-image-wrap">
-            <img
-              src="https://picsum.photos/seed/shikhar/600/750"
-              alt="Shikhar Goswami"
-              width="600"
-              height="750"
-              loading="lazy"
-            />
-          </div>
-          <div class="about-text">
-            <span class="section-label">Who I Am</span>
-            <h2 class="section-title">
-              Connecting data, users,<br />and what gets built.
-            </h2>
-            <p>
-              I'm a product-minded builder based in Bengaluru, with an
-              Integrated B.Tech + MBA in Information Technology from IIITM
-              Gwalior. At SanDisk I owned the roadmap and requirements for a
-              $2.5M AI-enabled customer-experience programme across 40+
-              markets. I ran discovery across 15+ user journeys, defined the
-              KPIs, and used post-launch data to decide what shipped next.
-            </p>
-            <p>
-              Since leaving SanDisk in April 2026, I've been building my own
-              products from zero: Apply Pie, a live job-discovery service;
-              Homie, a rental marketplace and relocation service; and Subatone,
-              a recurring-payments app. Each one taught me something a corporate
-              roadmap doesn't: you have to decide what not to build, put a
-              number on it, and find out quickly whether users care. I find the
-              work most interesting when the problem isn't fully defined yet.
-            </p>
-            <p>
-              Outside work, my evenings run on three things: music production,
-              market charts, and absolutely unhinged dogs on Instagram.
-            </p>
-            <div class="about-stats">
-              <div class="stat-card">
-                <div class="stat-number">$2.5M</div>
-                <div class="stat-label">Programme Owned</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number">40+</div>
-                <div class="stat-label">Markets Served</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number">3</div>
-                <div class="stat-label">0→1 Products Built</div>
-              </div>
-            </div>
+          <div class="proof reveal" aria-label="Where I’ve worked and studied">
+            <span class="proof-label">Experience at</span>
+            <ul class="proof-list">
+              <li>SanDisk</li>
+              <li>Western Digital</li>
+              <li>CARS24</li>
+              <li>IIITM Gwalior</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <!-- ══ WHAT I OFFER ═══════════════════════════════════════════ -->
-      <section
-        class="skills section"
-        id="offer"
-        style="background: var(--color-surface)"
-      >
-        <div class="container">
-          <span class="section-label">What I Offer</span>
-          <h2 class="section-title">
-            The work I do well —<br />and where I add value.
-          </h2>
-          <p class="section-desc">
-            A breakdown of the capabilities I bring, grounded in what I've
-            actually done in practice.
-          </p>
-          <div class="skills-bento">
-            <div
-              class="skill-card skill-card--wide"
-              style="
-                background: var(--color-primary-highlight);
-                border-color: var(--color-primary-highlight);
-              "
-            >
-              <svg
-                class="skill-card-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--color-primary)"
-                stroke-width="1.5"
-              >
-                <path d="M3 3h18v18H3z" />
-                <path d="M3 9h18M9 21V9" />
-              </svg>
-              <h3 style="color: var(--color-primary)">
-                Structuring Ambiguous Problems into Executable Plans
-              </h3>
-              <p
-                style="
-                  font-size: var(--text-sm);
-                  color: var(--color-text-muted);
-                "
-              >
-                Much of the work before a product ships is figuring out what to
-                build and in what order. I help teams move from a broad
-                objective — a budget, a user pain point, a system that needs
-                replacing — to a roadmap with clear priorities, defined
-                trade-offs, and stakeholder alignment.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">Problem Framing</span>
-                <span class="tag">Roadmapping</span>
-                <span class="tag">Backlog Prioritisation</span>
-                <span class="tag">Stakeholder Alignment</span>
-                <span class="tag">Discovery</span>
-                <span class="tag">KPI Design</span>
-                <span class="tag">Unit Economics</span>
-                <span class="tag">Phased Success Gates</span>
-              </div>
-            </div>
-
-            <div class="skill-card skill-card--tall">
-              <svg
-                class="skill-card-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              <h3>Understanding Users<br />Through Data</h3>
-              <p
-                style="
-                  font-size: var(--text-sm);
-                  color: var(--color-text-muted);
-                "
-              >
-                I combine qualitative research and quantitative analysis to map
-                how users actually move through a product — where they succeed,
-                where they drop off, and where the experience can be
-                meaningfully improved. I've done this across 40+ global markets
-                with real behavioural data.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">User Journey Mapping</span>
-                <span class="tag">IVR Flow Analysis</span>
-                <span class="tag">Customer Research</span>
-                <span class="tag">Drop-off Analysis</span>
-                <span class="tag">Self-Service Design</span>
-                <span class="tag">Market Research</span>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <svg
-                class="skill-card-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-              </svg>
-              <h3>Data Analysis with<br />a Business Lens</h3>
-              <p
-                style="
-                  font-size: var(--text-sm);
-                  color: var(--color-text-muted);
-                  margin-bottom: var(--space-3);
-                "
-              >
-                Querying data is the easy part. Knowing which question to answer
-                — and what the answer should change about the next decision — is
-                where I focus.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">SQL</span>
-                <span class="tag">Python</span>
-                <span class="tag">PowerBI</span>
-                <span class="tag">Metrics Design</span>
-                <span class="tag">Regression &amp; Hypothesis Testing</span>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <svg
-                class="skill-card-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
-              </svg>
-              <h3>Requirements That<br />Reduce Back-and-Forth</h3>
-              <p
-                style="
-                  font-size: var(--text-sm);
-                  color: var(--color-text-muted);
-                  margin-bottom: var(--space-3);
-                "
-              >
-                Clear specs reduce revision cycles. I write requirements
-                grounded in user needs and technical context, and I stay
-                involved through UAT to make sure what was agreed gets
-                delivered.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">PRD Writing</span>
-                <span class="tag">UAT Management</span>
-                <span class="tag">API Specs</span>
-                <span class="tag">Acceptance Criteria</span>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <svg
-                class="skill-card-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="m4.93 4.93 14.14 14.14" />
-              </svg>
-              <h3>Simplifying<br />Complex Integrations</h3>
-              <p
-                style="
-                  font-size: var(--text-sm);
-                  color: var(--color-text-muted);
-                  margin-bottom: var(--space-3);
-                "
-              >
-                Enterprise systems rarely talk to each other cleanly. I map the
-                data flows, identify where things leak or stall, and work with
-                engineering to design integrations that reduce manual
-                intervention.
-              </p>
-              <div class="skill-tags">
-                <span class="tag">Genesys</span>
-                <span class="tag">Oracle Service Cloud</span>
-                <span class="tag">Process Re-engineering</span>
-                <span class="tag">API Integration</span>
-              </div>
-            </div>
-          </div>
+      <!-- ── Highlights ───────────────────────────────────────── -->
+      <section class="highlights" aria-labelledby="highlights-title">
+        <div class="wrap">
+          <h2 class="eyebrow reveal" id="highlights-title">Numbers I’ve moved</h2>
+          <ul class="stats">
+            <li class="stat reveal">
+              <span class="stat-num" data-count="30" data-suffix="%">30%</span>
+              <span class="stat-label">lower average handle time</span>
+              <span class="stat-src">SanDisk · 40+ markets</span>
+            </li>
+            <li class="stat reveal">
+              <span class="stat-num" data-count="20" data-suffix="%">20%</span>
+              <span class="stat-label">more queries resolved by automation</span>
+              <span class="stat-src">SanDisk · IVR &amp; chatbot</span>
+            </li>
+            <li class="stat reveal">
+              <span class="stat-num" data-count="45" data-suffix="%">45%</span>
+              <span class="stat-label">fewer manual handoffs</span>
+              <span class="stat-src">Genesys ↔ Oracle Service Cloud</span>
+            </li>
+            <li class="stat reveal">
+              <span class="stat-num" data-count="40" data-suffix="%">40%</span>
+              <span class="stat-label">faster catalog processing</span>
+              <span class="stat-src">Western Digital · 238 SKUs</span>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- ══ IMPACT ═════════════════════════════════════════════════ -->
-      <section class="section" id="impact">
-        <div class="container">
-          <span class="section-label">Proof of Work</span>
-          <h2 class="section-title">
-            Work that moved<br />a measurable needle.
-          </h2>
-          <p class="section-desc">
-            Specific outcomes from specific initiatives — with the context that
-            makes the number meaningful.
-          </p>
+      <!-- ── Selected work ────────────────────────────────────── -->
+      <section class="section section--alt" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section-title" id="work-title">Problems I owned,<br />start to finish.</h2>
+            <p class="section-lede">
+              The context, the decisions, and what changed because of them.
+            </p>
+          </header>
 
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(
-                auto-fill,
-                minmax(min(440px, 100%), 1fr)
-              );
-              gap: var(--space-6);
-              margin-top: var(--space-8);
-            "
-          >
-            <div
-              class="project-card"
-              style="pointer-events: none; cursor: default"
-            >
-              <div class="project-body" style="padding: var(--space-8)">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: var(--space-3);
-                    margin-bottom: var(--space-5);
-                  "
-                >
-                  <div
-                    style="
-                      background: var(--color-primary-highlight);
-                      border-radius: var(--radius-md);
-                      padding: var(--space-3);
-                      color: var(--color-primary);
-                    "
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
-                  </div>
-                  <span class="project-tag" style="margin: 0"
-                    >SanDisk · CX Transformation</span
-                  >
-                </div>
-                <h3 class="project-title">
-                  30% reduction in average handle time
-                </h3>
-                <p class="project-desc">
-                  Analysed call volume and agent performance data to surface
-                  where the most time was being lost. Used those findings to
-                  define requirements for a $2.5M Genesys platform
-                  implementation — IVR and Chatbot capabilities rolled out
-                  across 40+ markets. The 30% AHT reduction and 20% improvement
-                  in self-service containment were outcomes of that scoped,
-                  sequenced work.
+          <article class="case reveal">
+            <div class="case-top">
+              <p class="case-meta">SanDisk · Customer experience · 2025–2026</p>
+              <h3 class="case-title">Made self-service work in 40+ markets.</h3>
+              <ul class="case-metrics">
+                <li><strong>30%</strong> lower handle time</li>
+                <li><strong>20%</strong> higher automated containment</li>
+                <li><strong>45%</strong> fewer manual handoffs</li>
+              </ul>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h4>The problem</h4>
+                <p>
+                  Customers were giving up on self-service and ending up with
+                  agents, but nobody knew where or how often. A $2.5M IVR and
+                  chatbot programme needed a build order, not a wish list.
                 </p>
-                <div class="project-tech" style="margin-top: auto">
-                  <span class="tech-chip">Roadmapping</span>
-                  <span class="tech-chip">Genesys</span>
-                  <span class="tech-chip">40+ Markets</span>
-                  <span class="tech-chip">IVR / Chatbot</span>
-                </div>
+              </div>
+              <div>
+                <h4>What I did</h4>
+                <p>
+                  Mapped 15+ user journeys and sized every drop-off by volume.
+                  Owned the roadmap and requirements with engineering and an
+                  external vendor. Traced the Genesys to Oracle Service Cloud data
+                  flow to find where data moved through people instead of
+                  systems, and drove adoption across regional teams without
+                  formal authority.
+                </p>
+              </div>
+              <div>
+                <h4>The result</h4>
+                <p>
+                  Handle time fell 30%, automated containment rose 20%, and
+                  manual handoffs dropped 45%. The KPIs and dashboards I defined
+                  decided what each following wave would ship.
+                </p>
               </div>
             </div>
+          </article>
 
-            <div
-              class="project-card"
-              style="pointer-events: none; cursor: default"
-            >
-              <div class="project-body" style="padding: var(--space-8)">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: var(--space-3);
-                    margin-bottom: var(--space-5);
-                  "
-                >
-                  <div
-                    style="
-                      background: var(--color-primary-highlight);
-                      border-radius: var(--radius-md);
-                      padding: var(--space-3);
-                      color: var(--color-primary);
-                    "
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                      <polyline points="17 6 23 6 23 12" />
-                    </svg>
-                  </div>
-                  <span class="project-tag" style="margin: 0"
-                    >Western Digital · Automation</span
-                  >
-                </div>
-                <h3 class="project-title">40% faster data processing</h3>
-                <p class="project-desc">
-                  Spotted a manual bottleneck in product-catalog operations that
-                  nobody had raised, put a cost on it, and built the business
-                  case for API-based synchronisation. After leadership sign-off,
-                  I led it from problem definition through cross-functional
-                  execution to UAT and deployment. Processing time across 238
-                  SKUs fell 40%, and 100% of acceptance criteria were met before
+          <article class="case reveal">
+            <div class="case-top">
+              <p class="case-meta">Western Digital · Operations · 2023–2025</p>
+              <h3 class="case-title">Found a bottleneck nobody had raised.</h3>
+              <ul class="case-metrics">
+                <li><strong>40%</strong> faster processing</li>
+                <li><strong>238</strong> SKUs automated</li>
+                <li><strong>27</strong> releases owned</li>
+              </ul>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h4>The problem</h4>
+                <p>
+                  Product-catalog updates relied on a manual extraction and
+                  reconciliation step. It was slow and error-prone, and no one
+                  had flagged it.
+                </p>
+              </div>
+              <div>
+                <h4>What I did</h4>
+                <p>
+                  Put a cost on it, built the business case for API-based sync,
+                  and after leadership sign-off led it from problem definition
+                  through UAT to deployment. Owned launch quality across 27
+                  releases and 9,000+ test cases.
+                </p>
+              </div>
+              <div>
+                <h4>The result</h4>
+                <p>
+                  Processing time fell 40% across 238 SKUs, the manual error class
+                  disappeared, and every acceptance criterion was met before
                   go-live.
                 </p>
-                <div class="project-tech" style="margin-top: auto">
-                  <span class="tech-chip">Discovery</span>
-                  <span class="tech-chip">API Integration</span>
-                  <span class="tech-chip">SQL</span>
-                  <span class="tech-chip">UAT</span>
-                </div>
               </div>
             </div>
+          </article>
 
-            <div
-              class="project-card"
-              style="pointer-events: none; cursor: default"
-            >
-              <div class="project-body" style="padding: var(--space-8)">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: var(--space-3);
-                    margin-bottom: var(--space-5);
-                  "
-                >
-                  <div
-                    style="
-                      background: var(--color-primary-highlight);
-                      border-radius: var(--radius-md);
-                      padding: var(--space-3);
-                      color: var(--color-primary);
-                    "
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                      <circle cx="12" cy="12" r="3" />
-                    </svg>
-                  </div>
-                  <span class="project-tag" style="margin: 0"
-                    >SanDisk · System Integration</span
-                  >
-                </div>
-                <h3 class="project-title">
-                  45% reduction in manual data handoffs
-                </h3>
-                <p class="project-desc">
-                  Mapped the full data flow between Genesys and Oracle Service
-                  Cloud — identifying where data moved through people instead of
-                  systems. Validated integration logic across edge cases and
-                  worked with engineering to close those gaps, reducing the
-                  reliance on manual intervention at every handoff point.
+          <article class="case reveal">
+            <div class="case-top">
+              <p class="case-meta">CARS24 · Machine learning · 2022</p>
+              <h3 class="case-title">Caught listing errors before buyers did.</h3>
+              <ul class="case-metrics">
+                <li><strong>+20%</strong> model accuracy (mAP)</li>
+                <li><strong>2,000+</strong> vehicles analysed</li>
+                <li><strong>Live</strong> in production</li>
+              </ul>
+            </div>
+            <div class="case-grid">
+              <div>
+                <h4>The problem</h4>
+                <p>
+                  Odometer readings on vehicle listings didn’t always match
+                  reality, which eroded trust on a live consumer marketplace.
                 </p>
-                <div class="project-tech" style="margin-top: auto">
-                  <span class="tech-chip">Data Flow Mapping</span>
-                  <span class="tech-chip">Oracle Service Cloud</span>
-                  <span class="tech-chip">Process Design</span>
-                  <span class="tech-chip">Validation</span>
-                </div>
+              </div>
+              <div>
+                <h4>What I did</h4>
+                <p>
+                  Analysed listing data for 2,000+ vehicles to find the error
+                  patterns, helped define the problem for automated odometer
+                  reading, and worked with product and engineering to build
+                  validation into the production pipeline.
+                </p>
+              </div>
+              <div>
+                <h4>The result</h4>
+                <p>
+                  A computer-vision model shipped into the live marketplace, with
+                  accuracy (mAP) up 20% through iterative testing.
+                </p>
               </div>
             </div>
-
-            <div
-              class="project-card"
-              style="pointer-events: none; cursor: default"
-            >
-              <div class="project-body" style="padding: var(--space-8)">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: var(--space-3);
-                    margin-bottom: var(--space-5);
-                  "
-                >
-                  <div
-                    style="
-                      background: var(--color-primary-highlight);
-                      border-radius: var(--radius-md);
-                      padding: var(--space-3);
-                      color: var(--color-primary);
-                    "
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path d="M12 20h9" />
-                      <path
-                        d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
-                      />
-                    </svg>
-                  </div>
-                  <span class="project-tag" style="margin: 0"
-                    >Cars24 · Feature Definition</span
-                  >
-                </div>
-                <h3 class="project-title">
-                  20% accuracy improvement in vehicle listings
-                </h3>
-                <p class="project-desc">
-                  Analysed discrepancies in listing data for 2,000+ vehicle
-                  units to identify patterns in odometer reporting errors.
-                  Helped define the problem statement for an Automated Odometer
-                  Reading feature and worked with engineering to integrate data
-                  validation into the production pipeline — resulting in a 20%
-                  lift in mAP accuracy.
-                </p>
-                <div class="project-tech" style="margin-top: auto">
-                  <span class="tech-chip">Feature Definition</span>
-                  <span class="tech-chip">Python</span>
-                  <span class="tech-chip">ML Validation</span>
-                  <span class="tech-chip">mAP Metrics</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <!-- ══ PRODUCTS BUILT ═══════════════════════════════════════ -->
-      <section
-        class="section"
-        id="products"
-        style="background: var(--color-surface)"
-      >
-        <div class="container">
-          <span class="section-label">Products I've Built · 0→1</span>
-          <h2 class="section-title">
-            My own products,<br />taken from zero.
-          </h2>
-          <p class="section-desc">
-            With no team or budget, every step is my call: validate the pain,
-            write the spec, model the economics, set the gates, and ship working
-            software built with AI coding tools.
-          </p>
+      <!-- ── Products ─────────────────────────────────────────── -->
+      <section class="section" id="products" aria-labelledby="products-title">
+        <div class="wrap">
+          <header class="section-head section-head--center reveal">
+            <p class="eyebrow">Products I’ve built</p>
+            <h2 class="section-title" id="products-title">Built from zero.</h2>
+            <p class="section-lede">
+              No team and no budget. Every call was mine: what to build, what
+              not to, and how I’d know if it worked.
+            </p>
+          </header>
+        </div>
 
-          <div class="projects-grid">
-            <article class="project-card project-card--feature">
-              <div class="project-body" style="padding: var(--space-8)">
-                <div class="product-head">
-                  <span class="project-tag" style="margin: 0"
-                    >Job Discovery · Web + Email</span
-                  >
-                  <span class="product-status product-status--live"
-                    >Live · Private beta</span
-                  >
-                </div>
-                <h3 class="project-title">Apply Pie</h3>
-                <div class="product-copy">
-                <p class="project-desc">
-                  <strong>The pain:</strong> job seekers check dozens of careers
-                  pages, wade through stale reposts, and still apply after
-                  hundreds of others. <strong>The product:</strong> every day it
-                  reads the official careers pages of 118 companies (50 in India,
-                  68 abroad that hire from India), keeps only new roles that match
-                  the user's role and experience within ±6 months, and sends them
-                  at 7 PM, freshest first, each with a referral message ready to
-                  send. Jobs abroad are included only when the posting offers
-                  relocation or visa support.
-                </p>
-                <p class="project-desc">
-                  <strong>What I owned:</strong> the product definition, a
-                  landing page and two-step onboarding with every step measured,
-                  an admin dashboard with cookie-free analytics, separate dev and
-                  prod environments with versioned releases, and the security
-                  and privacy work for the private beta.
-                </p>
-                </div>
-                <div class="project-tech">
-                  <span class="tech-chip">Onboarding Funnel</span>
-                  <span class="tech-chip">Product Analytics</span>
-                  <span class="tech-chip">Python</span>
-                  <span class="tech-chip">CI/CD</span>
-                </div>
-                <div class="project-links">
-                  <span class="product-note">Demo available on request</span>
+        <div class="tiles">
+          <!-- Apply Pie -->
+          <article class="tile tile--dark tile--wide reveal">
+            <div class="tile-copy">
+              <p class="tile-status tile-status--live"><span class="live-dot" aria-hidden="true"></span>Live · Private beta</p>
+              <h3 class="tile-name">Apply Pie</h3>
+              <p class="tile-tagline">Fresh jobs. Before the crowd.</p>
+              <p class="tile-desc">
+                Every day it reads the careers pages of 118 companies, keeps only
+                new roles that fit you, and sends them at 7 PM with a referral
+                message ready to go.
+              </p>
+              <div class="tile-ctas">
+                <a class="pill pill--light" href="#contact">Request a demo</a>
+              </div>
+            </div>
+
+            <div class="mock mock-mail" aria-hidden="true">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mail-head">
+                <span class="mail-from">Apply Pie</span>
+                <span class="mail-time">7:00 PM</span>
+              </div>
+              <p class="mail-subject">6 new roles matched your profile today</p>
+              <ul class="mail-rows">
+                <li><b class="p p1">P1</b><span class="mrole">Product Manager<small>Agoda · Bangkok</small></span><span class="tag-reloc">✈ Relocation</span><time>3h</time></li>
+                <li><b class="p p1">P1</b><span class="mrole">Senior Product Analyst<small>Delivery Hero · Berlin</small></span><span class="tag-reloc">✈ Relocation</span><time>9h</time></li>
+                <li><b class="p p2">P2</b><span class="mrole">Product Manager, Payments<small>Monzo · London</small></span><span class="tag-reloc">✈ Visa</span><time>1d</time></li>
+                <li><b class="p p2">P2</b><span class="mrole">Associate Product Manager<small>Trivago · Düsseldorf</small></span><span class="tag-reloc">✈ Relocation</span><time>2d</time></li>
+              </ul>
+              <p class="mail-foot">Referral messages ready for all 6 roles</p>
+            </div>
+
+            <details class="tile-more">
+              <summary>How I built it</summary>
+              <div class="tile-more-body">
+                <p><strong>The pain.</strong> Job seekers check dozens of careers pages, wade through stale reposts, and still apply after hundreds of others.</p>
+                <p><strong>The product.</strong> It reads official careers pages of 118 companies (50 in India, 68 abroad that hire from India), keeps roles within ±6 months of your experience, ranks the freshest first, and includes jobs abroad only when the posting offers relocation or visa support.</p>
+                <p><strong>What I owned.</strong> Product definition, a landing page and two-step onboarding with every step measured, an admin dashboard with cookie-free analytics, separate dev and prod environments with versioned releases, and the security and privacy work for the private beta.</p>
+              </div>
+            </details>
+          </article>
+
+          <!-- Homie -->
+          <article class="tile tile--light reveal">
+            <div class="tile-copy">
+              <p class="tile-status">Working MVP</p>
+              <h3 class="tile-name">Homie</h3>
+              <p class="tile-tagline">Rentals matched on what matters.</p>
+              <p class="tile-desc">
+                A two-sided marketplace that scores every home on budget, commute
+                and lifestyle. Chat opens only when both sides are interested.
+              </p>
+              <div class="tile-ctas">
+                <a class="link-cta" href="https://github.com/shikhargoswami/homie" target="_blank" rel="noopener">View on GitHub<span class="chev" aria-hidden="true">›</span></a>
+              </div>
+            </div>
+
+            <div class="mock mock-home" aria-hidden="true">
+              <div class="home-card">
+                <div class="home-photo"><span class="home-chip">2 BHK · Koramangala</span></div>
+                <div class="home-body">
+                  <div class="home-row">
+                    <div>
+                      <p class="home-price">₹38,000<small>/mo</small></p>
+                      <p class="home-sub">18 min to your office</p>
+                    </div>
+                    <div class="ring" style="--p: 92"><span>92%</span></div>
+                  </div>
+                  <ul class="factors">
+                    <li><span>Budget</span><i style="--w: 96%"></i></li>
+                    <li><span>Commute</span><i style="--w: 90%"></i></li>
+                    <li><span>Lifestyle</span><i style="--w: 84%"></i></li>
+                  </ul>
                 </div>
               </div>
-            </article>
+              <div class="home-actions"><span class="no">✕</span><span class="yes">♥</span></div>
+            </div>
 
-            <article class="project-card">
-              <div class="project-body" style="padding: var(--space-8)">
-                <div class="product-head">
-                  <span class="project-tag" style="margin: 0"
-                    >Two-Sided Rental Marketplace</span
-                  >
-                  <span class="product-status">Working MVP</span>
-                </div>
-                <h3 class="project-title">Homie</h3>
-                <p class="project-desc">
-                  <strong>The pain:</strong> renters filter on the wrong
-                  attributes and tour unsuitable homes, while landlords field
-                  unqualified interest. <strong>The product:</strong> swipe
-                  discovery with a multi-factor match score that weights budget,
-                  location, commute and lifestyle. Chat opens only when both
-                  sides are interested, and viewings are scheduled in the app.
-                  Built as a full-stack MVP over 35 commits.
-                </p>
-                <p class="project-desc">
-                  <strong>The pivot:</strong> I tested who would actually pay and
-                  reframed Homie as <em>Relocate</em>, a fixed-fee home-finding
-                  service for professionals moving into one Bengaluru
-                  micro-market. It includes a move-in condition report signed by
-                  both sides. I specced it around five pillars that each need to
-                  work for the business to work, then built all 10 MVP features
-                  across the associate, tenant and landlord journeys.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-chip">Marketplace Design</span>
-                  <span class="tech-chip">Matching Algorithm</span>
-                  <span class="tech-chip">TypeScript</span>
-                  <span class="tech-chip">React Native</span>
-                  <span class="tech-chip">PostgreSQL</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/shikhargoswami/homie"
-                    class="product-link"
-                    target="_blank"
-                    rel="noopener"
-                    >View on GitHub →</a
-                  >
-                </div>
+            <details class="tile-more">
+              <summary>How I built it</summary>
+              <div class="tile-more-body">
+                <p><strong>The pain.</strong> Renters filter on the wrong attributes and tour unsuitable homes, while landlords field unqualified interest.</p>
+                <p><strong>The product.</strong> Swipe discovery, a multi-factor match score, mutual-match chat and in-app viewing schedules. Built full stack with AI coding tools: Node.js and TypeScript, PostgreSQL, Redis and React Native, over 35 commits.</p>
+                <p><strong>The pivot.</strong> I tested who would actually pay and reframed it as Homie Relocate, a fixed-fee home-finding service for professionals moving into one Bengaluru micro-market, with a move-in condition report signed by both sides. I specced it around five pillars that each have to work, then built all 10 MVP features across the associate, tenant and landlord journeys.</p>
               </div>
-            </article>
+            </details>
+          </article>
 
-            <article class="project-card">
-              <div class="project-body" style="padding: var(--space-8)">
-                <div class="product-head">
-                  <span class="project-tag" style="margin: 0"
-                    >Consumer Fintech · Recurring Payments</span
-                  >
-                  <span class="product-status">Spec → App</span>
-                </div>
-                <h3 class="project-title">Subatone</h3>
-                <p class="project-desc">
-                  <strong>The pain:</strong> people in India run 10–15 recurring
-                  payments a month (subscriptions, recharges, rent, insurance)
-                  with no single view and no warning before renewals.
-                  <strong>The plan:</strong> a full feature spec, a
-                  brand-funded rewards flywheel with unit economics modelled in
-                  INR, and a four-phase roadmap with explicit gates: MVP in 8
-                  weeks, then a 1,000-user beta gated on Day-7 retention of at
-                  least 30%, then 3,000 MAU and ₹10K MRR before fundraising.
-                </p>
-                <p class="project-desc">
-                  <strong>The build:</strong> the user-side app ships first, built
-                  around a weekly habit loop: renewal and free-trial alerts, a
-                  Sunday "week ahead" digest, a monthly recap, and split-share
-                  requests over WhatsApp. It's being prepared for the App Store.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-chip">Unit Economics</span>
-                  <span class="tech-chip">Retention Loops</span>
-                  <span class="tech-chip">Phased Roadmap</span>
-                  <span class="tech-chip">React Native</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/shikhargoswami/subatone"
-                    class="product-link"
-                    target="_blank"
-                    rel="noopener"
-                    >View on GitHub →</a
-                  >
-                </div>
+          <!-- Subatone -->
+          <article class="tile tile--dark reveal">
+            <div class="tile-copy">
+              <p class="tile-status">Spec → App</p>
+              <h3 class="tile-name">Subatone</h3>
+              <p class="tile-tagline">Every renewal, before it hits.</p>
+              <p class="tile-desc">
+                One place for the 10–15 subscriptions, recharges and bills people
+                pay each month, with a warning before each one renews.
+              </p>
+              <div class="tile-ctas">
+                <a class="link-cta link-cta--light" href="https://github.com/shikhargoswami/subatone" target="_blank" rel="noopener">View on GitHub<span class="chev" aria-hidden="true">›</span></a>
               </div>
-            </article>
-          </div>
+            </div>
+
+            <div class="mock mock-subs" aria-hidden="true">
+              <p class="subs-head">This week<span>₹1,067</span></p>
+              <ul class="subs-list">
+                <li><i style="--c: #e50914">N</i><span>Netflix<small>Renews in 3 days</small></span><b>₹649</b></li>
+                <li><i style="--c: #1db954">S</i><span>Spotify<small>Renews in 5 days</small></span><b>₹119</b></li>
+                <li><i style="--c: #0a66c2">J</i><span>Mobile recharge<small>Friday</small></span><b>₹299</b></li>
+              </ul>
+              <div class="subs-trial">
+                <p>Free trial ends tomorrow</p>
+                <span class="btn-ghost">Cancel</span><span class="btn-solid">Keep</span>
+              </div>
+            </div>
+
+            <details class="tile-more">
+              <summary>How I built it</summary>
+              <div class="tile-more-body">
+                <p><strong>The plan.</strong> A full feature spec, a brand-funded rewards flywheel with unit economics modelled in INR, and a four-phase roadmap with explicit gates: MVP in 8 weeks, a 1,000-user beta gated on Day-7 retention of at least 30%, then 3,000 MAU and ₹10K MRR before fundraising.</p>
+                <p><strong>The build.</strong> The user-side app ships first, built around a weekly habit loop: renewal and free-trial alerts, a Sunday “week ahead” digest, a monthly recap, and split-share requests over WhatsApp. It’s being prepared for the App Store.</p>
+              </div>
+            </details>
+          </article>
         </div>
       </section>
 
-      <!-- ══ RESUME ═════════════════════════════════════════════════ -->
-      <section class="resume section" id="resume">
-        <div class="container">
-          <div class="resume-header">
+      <!-- ── Approach ─────────────────────────────────────────── -->
+      <section class="section section--alt" id="approach" aria-labelledby="approach-title">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="eyebrow">How I work</p>
+            <h2 class="section-title" id="approach-title">One loop.<br />Every product.</h2>
+            <p class="section-lede">
+              The same six steps, whether the budget is $2.5M or zero. Each one
+              backed by something I’ve actually done.
+            </p>
+          </header>
+
+          <ol class="loop">
+            <li class="loop-step reveal">
+              <span class="loop-n">01</span>
+              <h3>Find the pain</h3>
+              <p>Mapped 15+ user journeys to see exactly where customers gave up on self-service.</p>
+            </li>
+            <li class="loop-step reveal">
+              <span class="loop-n">02</span>
+              <h3>Size it</h3>
+              <p>Every drop-off was sized by volume before it earned a place on the roadmap.</p>
+            </li>
+            <li class="loop-step reveal">
+              <span class="loop-n">03</span>
+              <h3>Spec it</h3>
+              <p>User stories, acceptance criteria and failure paths that engineers and vendors can build from.</p>
+            </li>
+            <li class="loop-step reveal">
+              <span class="loop-n">04</span>
+              <h3>Sequence it</h3>
+              <p>Phased roadmaps with explicit gates, like Day-7 retention of 30% before scaling up.</p>
+            </li>
+            <li class="loop-step reveal">
+              <span class="loop-n">05</span>
+              <h3>Ship it</h3>
+              <p>27 releases and 9,000+ test cases owned. Working MVPs shipped with AI coding tools.</p>
+            </li>
+            <li class="loop-step reveal">
+              <span class="loop-n">06</span>
+              <h3>Measure it</h3>
+              <p>KPIs and dashboards defined up front, so post-launch data decides the next wave.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ── Experience ───────────────────────────────────────── -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="wrap">
+          <header class="section-head section-head--split reveal">
             <div>
-              <span class="section-label">The Journey</span>
-              <h2 class="section-title">Experience,<br />education & more.</h2>
+              <p class="eyebrow">Experience</p>
+              <h2 class="section-title" id="experience-title">The journey so far.</h2>
             </div>
-            <a
-              href="./assets/Shikhar_Goswami_Resume__PM.pdf"
-              class="btn btn-primary"
-              download
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-              Download Resume
+            <a class="pill pill--outline" href="./assets/Shikhar_Goswami_Resume__PM.pdf" data-resume download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16" /></svg>
+              Download résumé
             </a>
-          </div>
+          </header>
 
-          <div class="resume-tabs" role="tablist">
-            <button class="resume-tab active" data-tab="experience" role="tab">
-              Experience
-            </button>
-            <button class="resume-tab" data-tab="education" role="tab">
-              Education
-            </button>
-            <button class="resume-tab" data-tab="extras" role="tab">
-              Beyond Work
-            </button>
-          </div>
-
-          <div id="panel-experience" class="resume-panel active">
-            <div class="resume-timeline">
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title">Independent Product Builder</span>
-                    <span class="resume-company"
-                      >Apply Pie · Homie · Subatone</span
-                    >
-                    <span class="resume-date"
-                      >2026 – Present · Bengaluru</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Building consumer products from zero, end to end: validating
-                    the pain point, writing the spec, modelling the economics,
-                    sequencing the roadmap, and shipping working software with
-                    AI coding tools. Apply Pie is live in private beta, with
-                    dev/prod environments, versioned releases and an analytics
-                    dashboard. Homie is a working two-sided
-                    marketplace MVP, and Subatone is a user-side app being
-                    prepared for the App Store.
-                  </p>
-                </div>
+          <ol class="timeline">
+            <li class="role reveal">
+              <div class="role-when">2026 – Present</div>
+              <div class="role-body">
+                <h3>Independent Product Builder</h3>
+                <p class="role-org">Apply Pie · Homie · Subatone · Bengaluru</p>
+                <p>Building consumer products end to end: validating the pain, writing the spec, modelling the economics, sequencing the roadmap, and shipping working software with AI coding tools.</p>
               </div>
-
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title"
-                      >Analyst 2, Business Applications</span
-                    >
-                    <span class="resume-company">SanDisk</span>
-                    <span class="resume-date"
-                      >Jan 2025 – Apr 2026 · Bengaluru</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Owned the roadmap and requirements for a $2.5M AI-enabled
-                    customer-experience programme (IVR and chatbot on Genesys)
-                    across 40+ markets, working with engineering and an external
-                    vendor. Ran discovery across 15+ user journeys to find where
-                    customers abandoned self-service, sized each drop-off by
-                    volume, and turned the findings into a prioritised build
-                    order. Defined the product KPIs, built the dashboards behind
-                    them, and drove adoption across regional teams without
-                    formal authority. Results: 30% lower handle time, 20% higher
-                    automated containment, and 45% fewer manual handoffs between
-                    Genesys and Oracle Service Cloud.
-                  </p>
-                </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">Jan 2025 – Apr 2026</div>
+              <div class="role-body">
+                <h3>Analyst 2, Business Applications</h3>
+                <p class="role-org">SanDisk · Bengaluru</p>
+                <p>Owned the roadmap and requirements for a $2.5M AI-enabled customer-experience programme (IVR and chatbot on Genesys) across 40+ markets. Ran discovery, defined the KPIs, and drove adoption across regional teams without formal authority.</p>
               </div>
-
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title">Business Analyst 2</span>
-                    <span class="resume-company"
-                      >Western Digital (flash business, now SanDisk)</span
-                    >
-                    <span class="resume-date"
-                      >Jul 2023 – Jan 2025 · Bengaluru</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Spotted a manual bottleneck in product-catalog operations
-                    that nobody had raised, put a cost on it, and drove the fix
-                    end to end. API automation cut processing time by 40% across
-                    238 SKUs. Turned ambiguous input into specs and backlog
-                    items, and owned launch quality across 27 releases and
-                    9,000+ test cases, with UAT signed off at 100% of acceptance
-                    criteria.
-                  </p>
-                </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">Jul 2023 – Jan 2025</div>
+              <div class="role-body">
+                <h3>Business Analyst 2</h3>
+                <p class="role-org">Western Digital (flash business, now SanDisk) · Bengaluru</p>
+                <p>Automated product-catalog sync through APIs, cutting processing time 40% across 238 SKUs. Turned ambiguous input into specs and owned launch quality across 27 releases and 9,000+ test cases.</p>
               </div>
-
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title">Data Science Intern</span>
-                    <span class="resume-company">Cars24</span>
-                    <span class="resume-date"
-                      >March 2022 – May 2022 · Remote</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Analysed vehicle listing data for 2,000+ units to identify
-                    odometer reporting discrepancies. Contributed to defining
-                    the problem statement for an Automated Odometer Reading
-                    feature and supported integration of validation checks into
-                    the production pipeline. Achieved a 20% improvement in model
-                    accuracy (mAP) through iterative testing and validation.
-                  </p>
-                </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">Mar – May 2022</div>
+              <div class="role-body">
+                <h3>Data Science Intern</h3>
+                <p class="role-org">CARS24 · Remote</p>
+                <p>Shipped a computer-vision model into a live marketplace to catch listing discrepancies across 2,000+ vehicles, lifting mAP 20%.</p>
               </div>
+            </li>
+            <li class="role reveal">
+              <div class="role-when">2018 – 2023</div>
+              <div class="role-body">
+                <h3>Integrated B.Tech + MBA, Information Technology</h3>
+                <p class="role-org">Indian Institute of Information Technology &amp; Management (IIITM), Gwalior · 7.25 CGPA</p>
+                <p>MBA thesis: primary research with 450 consumers, where regression isolated the top 3 drivers of repeat purchase and turned them into feature recommendations with a projected 18% lift.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="toolkit reveal">
+            <div>
+              <h3>Product</h3>
+              <ul class="chips">
+                <li>Discovery &amp; validation</li><li>PRDs &amp; specs</li><li>Personas &amp; journeys</li>
+                <li>Roadmaps with success gates</li><li>Prioritisation</li><li>KPI design</li>
+                <li>Unit economics</li><li>Launch &amp; adoption</li><li>Influence without authority</li>
+              </ul>
             </div>
-          </div>
-
-          <div id="panel-education" class="resume-panel">
-            <div class="resume-timeline">
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title"
-                      >Integrated B.Tech + MBA — Information Technology</span
-                    >
-                    <span class="resume-company"
-                      >Indian Institute of Information Technology &amp;
-                      Management (IIITM), Gwalior</span
-                    >
-                    <span class="resume-date">2018 – 2023 · 7.25 CGPA</span>
-                  </div>
-                  <p class="resume-desc">
-                    A 5-year integrated programme combining technical depth with
-                    business fundamentals. Relevant coursework: Marketing
-                    Management, Product &amp; Brand Management, Strategic
-                    Management, Database Management Systems, Object Oriented
-                    Programming, Machine Learning, Data Analysis, and Project
-                    Management.
-                  </p>
-                  <p class="resume-desc">
-                    <strong>MBA thesis:</strong> primary research with 450
-                    consumers. Regression isolated the top 3 drivers of repeat
-                    purchase, which I turned into feature recommendations with a
-                    projected 18% lift.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="panel-extras" class="resume-panel">
-            <div class="resume-timeline">
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title"
-                      >Lead Singer &amp; Guitarist · Prayala Band</span
-                    >
-                    <span class="resume-company"
-                      >Best Performer, Open Mic'20</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Performed at multiple college festivals and events at IIIT
-                    Gwalior.
-                  </p>
-                </div>
-              </div>
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title"
-                      >Sponsorship Head &amp; Event Head · Aurora'20</span
-                    >
-                    <span class="resume-company">IIIT Gwalior Annual Fest</span>
-                  </div>
-                  <p class="resume-desc">
-                    Managed sponsorship outreach and on-ground event
-                    coordination for the college's annual technical and cultural
-                    festival.
-                  </p>
-                </div>
-              </div>
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title"
-                      >Social Media Head · Rotaract Club</span
-                    >
-                    <span class="resume-company">IIIT Gwalior</span>
-                  </div>
-                  <p class="resume-desc">
-                    Managed content strategy and community engagement across the
-                    club's social channels.
-                  </p>
-                </div>
-              </div>
-              <div class="resume-item">
-                <div class="resume-dot"></div>
-                <div class="resume-content">
-                  <div class="resume-meta">
-                    <span class="resume-title">Currently Pursuing</span>
-                    <span class="resume-company"
-                      >CFA Level 1 · CAT Preparation</span
-                    >
-                  </div>
-                  <p class="resume-desc">
-                    Building depth in financial analysis and quantitative
-                    reasoning alongside my professional work.
-                  </p>
-                </div>
-              </div>
+            <div>
+              <h3>Data &amp; technical</h3>
+              <ul class="chips">
+                <li>SQL</li><li>Python</li><li>PowerBI</li><li>Advanced Excel</li>
+                <li>Funnel &amp; drop-off analysis</li><li>Regression &amp; hypothesis testing</li>
+                <li>TypeScript</li><li>React Native</li><li>PostgreSQL</li><li>REST APIs</li>
+                <li>AI-assisted development</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ══ BEYOND WORK ═══════════════════════════════════════════ -->
-      <section class="section" id="beyond">
-        <div class="container">
-          <span class="section-label">Beyond Work</span>
-          <h2 class="section-title">Life outside<br />the product roadmap.</h2>
-          <p class="section-desc">
-            Writing, music, and the places where I show up online.
-          </p>
-
-          <div class="beyond-grid">
-            <!-- ── MUSIC ──────────────────────────────────────── -->
-            <div>
-              <span class="beyond-block-label">Music · Shikhar Goswami</span>
-              <h3 class="beyond-block-title">On Apple Music</h3>
-              <div class="music-tiles">
-                <div class="music-tile">
-                  <iframe
-                    allow="
-                      autoplay *;
-                      encrypted-media *;
-                      fullscreen *;
-                      clipboard-write;
-                    "
-                    frameborder="0"
-                    height="175"
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-                    src="https://embed.music.apple.com/in/album/gumaan/1752390290?i=1752390291"
-                    title="Gumaan — Shikhar Goswami on Apple Music"
-                    loading="lazy"
-                  >
-                  </iframe>
-                </div>
-              </div>
-              <p
-                style="
-                  font-size: var(--text-xs);
-                  color: var(--color-text-faint);
-                  margin-top: var(--space-3);
-                "
-              ></p>
-            </div>
-
-            <!-- ── SOCIAL + YOUTUBE ─────────────────────────── -->
-            <div>
-              <span class="beyond-block-label">Find Me Online</span>
-              <h3 class="beyond-block-title">
-                Handles &amp; live performances
-              </h3>
-
-              <!-- Handle cards -->
-              <div class="social-handles">
-                <a
-                  href="https://www.youtube.com/@shikhargoswami"
-                  class="social-handle"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div class="social-handle-icon social-handle-icon--yt">
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="social-handle-label">YouTube</div>
-                    <div class="social-handle-name">@shikhargoswami</div>
-                    <div class="social-handle-sub">
-                      Live performances &amp; sessions
-                    </div>
-                  </div>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/shikhargoswami_"
-                  class="social-handle"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div class="social-handle-icon social-handle-icon--ig">
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="social-handle-label">Instagram</div>
-                    <div class="social-handle-name">@shikhargoswami_</div>
-                    <div class="social-handle-sub">Day-to-day &amp; music</div>
-                  </div>
-                </a>
-
-                <a
-                  href="https://medium.com/@shikhargoswami"
-                  class="social-handle"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div class="social-handle-icon social-handle-icon--medium">
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div class="social-handle-label">Medium</div>
-                    <div class="social-handle-name">@shikhargoswami</div>
-                    <div class="social-handle-sub">Long-form writing</div>
-                  </div>
-                </a>
-              </div>
-
-              <!-- YouTube video tiles — real Pralaya Band performances -->
-              <div class="video-tiles">
-                <div class="video-tile">
-                  <div class="video-tile-embed">
-                    <iframe
-                      src="https://www.youtube.com/embed/Z2JPRSCZEkw"
-                      title="Pralaya Band Performance"
-                      allow="
-                        accelerometer;
-                        autoplay;
-                        clipboard-write;
-                        encrypted-media;
-                        gyroscope;
-                        picture-in-picture;
-                      "
-                      allowfullscreen
-                      loading="lazy"
-                    >
-                    </iframe>
-                  </div>
-                  <div class="video-tile-info">
-                    <div class="video-tile-tag">Live · MyFM 94.3</div>
-                    <div class="video-tile-title">
-                      Pralaya Band — On-Air Studio Session
-                    </div>
-                    <div class="video-tile-meta">MyFM 94.3 · Dec 2019</div>
-                  </div>
-                </div>
-
-                <div class="video-tile">
-                  <div class="video-tile-embed">
-                    <iframe
-                      src="https://www.youtube.com/embed/zYMYHaXUBOM"
-                      title="Pralaya Band Performance"
-                      allow="
-                        accelerometer;
-                        autoplay;
-                        clipboard-write;
-                        encrypted-media;
-                        gyroscope;
-                        picture-in-picture;
-                      "
-                      allowfullscreen
-                      loading="lazy"
-                    >
-                    </iframe>
-                  </div>
-                  <div class="video-tile-info">
-                    <div class="video-tile-tag">Live Performance</div>
-                    <div class="video-tile-title">Pralaya Band Live</div>
-                    <div class="video-tile-meta">YouTube</div>
-                  </div>
-                </div>
-
-                <div class="video-tile">
-                  <div class="video-tile-embed">
-                    <iframe
-                      src="https://www.youtube.com/embed/fBPApMUCDvI"
-                      title="Pralaya Band — MyFM 94.3 Live Studio Session"
-                      allow="
-                        accelerometer;
-                        autoplay;
-                        clipboard-write;
-                        encrypted-media;
-                        gyroscope;
-                        picture-in-picture;
-                      "
-                      allowfullscreen
-                      loading="lazy"
-                    >
-                    </iframe>
-                  </div>
-                  <div class="video-tile-info">
-                    <div class="video-tile-tag">Live · MyFM 94.3</div>
-                    <div class="video-tile-title">
-                      Pralaya Band — On-Air Studio Session
-                    </div>
-                    <div class="video-tile-meta">MyFM 94.3 · Dec 2019</div>
-                  </div>
-                </div>
-              </div>
+      <!-- ── About + beyond work ──────────────────────────────── -->
+      <section class="section section--alt" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="about">
+            <header class="about-head reveal">
+              <p class="eyebrow">About</p>
+              <h2 class="section-title" id="about-title">The person<br />behind the roadmap.</h2>
+            </header>
+            <div class="about-copy reveal">
+              <p class="about-lead">
+                I’m most useful when the problem isn’t fully defined yet. I like
+                working out what the real question is, putting a number on it,
+                and staying involved until the outcome actually lands.
+              </p>
+              <p>
+                I studied technology and business together at IIITM Gwalior, and
+                that pairing still shapes how I work: I can write the SQL, read
+                the API spec and build the business case. Outside work, my
+                evenings run on three things: music production, market charts,
+                and absolutely unhinged dogs on Instagram.
+              </p>
+              <ul class="about-facts">
+                <li><span>Based in</span>Bengaluru · open to remote, hybrid or relocation</li>
+                <li><span>Studying</span>CFA Level 1 · CAT preparation</li>
+                <li><span>Led</span>Sponsorship &amp; events, Aurora’20 · Social media, Rotaract Club</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ══ CONTACT ════════════════════════════════════════════════ -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <span class="section-label">Get in Touch</span>
-          <h2 class="section-title">Open to the right<br />conversations.</h2>
-          <div class="contact-wrapper">
-            <div>
-              <p
-                style="
-                  color: var(--color-text-muted);
-                  max-width: 44ch;
-                  margin-bottom: var(--space-4);
-                "
-              >
-                I'm looking for Product Manager roles, especially 0→1 and early
-                growth-stage products where discovery and delivery both sit with
-                the PM. Available immediately. Based in Bengaluru and open to
-                remote, hybrid, or relocation for the right opportunity.
+          <div class="music tile tile--dark reveal" id="music">
+            <div class="music-copy">
+              <p class="eyebrow eyebrow--light">Off the clock</p>
+              <h3 class="music-title">I also make music.</h3>
+              <p>
+                Lead singer and guitarist of Pralaya at IIITM Gwalior (Best
+                Performer, Open Mic’20), and now releasing my own songs.
               </p>
-              <p
-                style="
-                  color: var(--color-text-faint);
-                  font-size: var(--text-sm);
-                  max-width: 44ch;
-                  margin-bottom: var(--space-8);
-                "
-              >
-                Feel free to reach out via email or LinkedIn. I respond to all
-                relevant messages.
-              </p>
-              <div class="contact-links">
-                <a
-                  href="mailto:shikhargoswami2308@gmail.com"
-                  class="contact-link"
-                >
-                  <svg
-                    class="contact-link-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  <div>
-                    <div class="contact-link-label">Email</div>
-                    <div class="contact-link-value">
-                      shikhargoswami2308@gmail.com
-                    </div>
-                  </div>
-                </a>
-                <a href="tel:+918112274244" class="contact-link">
-                  <svg
-                    class="contact-link-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.61 4.48 2 2 0 0 1 3.6 2.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.02-.93a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    />
-                  </svg>
-                  <div>
-                    <div class="contact-link-label">Phone</div>
-                    <div class="contact-link-value">+91 81122 74244</div>
-                  </div>
-                </a>
-                <a
-                  href="https://linkedin.com/in/shikhargoswami"
-                  class="contact-link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <svg
-                    class="contact-link-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                    />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
-                  <div>
-                    <div class="contact-link-label">LinkedIn</div>
-                    <div class="contact-link-value">
-                      linkedin.com/in/shikhargoswami
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://github.com/shikhargoswami"
-                  class="contact-link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <svg
-                    class="contact-link-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                    />
-                    <path d="M9 18c-4.51 2-5-2-7-2" />
-                  </svg>
-                  <div>
-                    <div class="contact-link-label">GitHub</div>
-                    <div class="contact-link-value">
-                      github.com/shikhargoswami
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://medium.com/@shikhargoswami"
-                  class="contact-link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <svg
-                    class="contact-link-icon"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <path d="M7 8h10M7 12h10M7 16h6" />
-                  </svg>
-                  <div>
-                    <div class="contact-link-label">Medium</div>
-                    <div class="contact-link-value">
-                      medium.com/@shikhargoswami
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <ul class="socials">
+                <li><a href="https://www.youtube.com/@shikhargoswami" target="_blank" rel="noopener">YouTube<span class="chev" aria-hidden="true">›</span></a></li>
+                <li><a href="https://www.instagram.com/shikhargoswami_" target="_blank" rel="noopener">Instagram<span class="chev" aria-hidden="true">›</span></a></li>
+              </ul>
             </div>
+            <div class="music-player">
+              <iframe
+                title="Gumaan by Shikhar Goswami on Apple Music"
+                src="https://embed.music.apple.com/in/album/gumaan/1752390290?i=1752390291"
+                height="175"
+                loading="lazy"
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              ></iframe>
+            </div>
+          </div>
 
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                  autocomplete="name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  required
-                  autocomplete="email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="What would you like to discuss?"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
+          <ul class="videos">
+            <li class="reveal">
+              <button class="video" type="button" data-yt="fBPApMUCDvI" aria-label="Play: Pralaya live on MyFM 94.3">
+                <img src="https://i.ytimg.com/vi/fBPApMUCDvI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" />
+                <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg></span>
               </button>
-            </form>
+              <p class="video-title">Pralaya, live on MyFM 94.3</p>
+              <p class="video-sub">On-air studio session · Audio</p>
+            </li>
+            <li class="reveal">
+              <button class="video" type="button" data-yt="zYMYHaXUBOM" aria-label="Play: Engineers Sing-off Battle">
+                <img src="https://i.ytimg.com/vi/zYMYHaXUBOM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" />
+                <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg></span>
+              </button>
+              <p class="video-title">Engineers Sing-off Battle</p>
+              <p class="video-sub">2019–20 hits · with Gajpal</p>
+            </li>
+            <li class="reveal">
+              <button class="video" type="button" data-yt="Z2JPRSCZEkw" aria-label="Play: How I got placed at Western Digital">
+                <img src="https://i.ytimg.com/vi/Z2JPRSCZEkw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" />
+                <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg></span>
+              </button>
+              <p class="video-title">How I got placed at Western Digital</p>
+              <p class="video-sub">Talk · Uthaan, IIIT Gwalior</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Contact ──────────────────────────────────────────── -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
+          <p class="hero-eyebrow reveal"><span class="live-dot" aria-hidden="true"></span>Available now</p>
+          <h2 class="contact-title reveal" id="contact-title">Let’s build<br /><span class="grad">what’s next.</span></h2>
+          <p class="contact-lede reveal">
+            I’m looking for Product Manager roles, especially 0→1 and early-growth
+            products where discovery and delivery both sit with the PM. I reply
+            to every relevant message.
+          </p>
+          <div class="contact-ctas reveal">
+            <a class="pill pill--lg" href="mailto:shikhargoswami2308@gmail.com?subject=Hello%20Shikhar">Email me</a>
+            <a class="pill pill--lg pill--outline" href="https://linkedin.com/in/shikhargoswami" target="_blank" rel="noopener">Connect on LinkedIn</a>
           </div>
+          <p class="contact-alt reveal">
+            <button class="copy" type="button" data-copy="shikhargoswami2308@gmail.com">
+              shikhargoswami2308@gmail.com
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5" /><path d="M16 8V6.5A2.5 2.5 0 0 0 13.5 4h-7A2.5 2.5 0 0 0 4 6.5v7A2.5 2.5 0 0 0 6.5 16H8" /></svg>
+            </button>
+            <span aria-hidden="true">·</span>
+            <a href="tel:+918112274244">+91 81122 74244</a>
+          </p>
         </div>
       </section>
     </main>
 
+    <!-- ── Footer ─────────────────────────────────────────────── -->
     <footer class="footer">
-      <div class="footer-inner">
-        <p class="footer-copy">
-          © 2026 Shikhar Goswami. Built with HTML, CSS &amp; care.
-        </p>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="#about">About</a>
-          <a href="#offer">What I Offer</a>
-          <a href="#impact">Impact</a>
-          <a href="#products">Products</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Let's Talk</a>
-        </nav>
+      <div class="wrap">
+        <div class="footer-cols">
+          <div>
+            <h2>Work</h2>
+            <ul>
+              <li><a href="#work">Selected work</a></li>
+              <li><a href="#approach">Approach</a></li>
+              <li><a href="#experience">Experience</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Products</h2>
+            <ul>
+              <li><a href="#products">Apply Pie</a></li>
+              <li><a href="https://github.com/shikhargoswami/homie" target="_blank" rel="noopener">Homie</a></li>
+              <li><a href="https://github.com/shikhargoswami/subatone" target="_blank" rel="noopener">Subatone</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Elsewhere</h2>
+            <ul>
+              <li><a href="https://linkedin.com/in/shikhargoswami" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/shikhargoswami" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://medium.com/@shikhargoswami" target="_blank" rel="noopener">Writing on Medium</a></li>
+              <li><a href="https://www.youtube.com/@shikhargoswami" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-fine">© 2026 Shikhar Goswami. Designed and built in Bengaluru.</p>
       </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <div class="toast" role="status" aria-live="polite"></div>
   </body>
 </html>
